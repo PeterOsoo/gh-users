@@ -1,4 +1,5 @@
-import Users from "./components/Users"
+// import Users from "./components/Users"
+import Data from "./components/Data"
 
 const App = () => {
 	console.log("App running")
@@ -6,7 +7,9 @@ const App = () => {
 		<div>
 			<h3> Github Users </h3>
 
-			<Users />
+			{/* <Users /> */}
+
+			<Data />
 		</div>
 	)
 }
