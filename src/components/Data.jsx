@@ -32,7 +32,10 @@ const Data = () => {
 				<div>
 					<h3>Users Generated from API endpoint</h3>
 					{data.map(user => (
-						<div key={user.id}>{user.login} </div>
+						<div key={user.id}>
+							{user.login}
+							<img src={user.url} alt={user.login} />{" "}
+						</div>
 					))}
 				</div>
 			)}
