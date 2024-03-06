@@ -1,5 +1,6 @@
 // import Users from "./components/Users"
 import Data from "./components/Data"
+import "./App.css"
 
 const App = () => {
 	console.log("App running")

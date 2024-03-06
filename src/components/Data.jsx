@@ -30,12 +30,18 @@ const Data = () => {
 			) : (
 				<div>
 					<h3>Users Generated from API endpoint</h3>
-					{data.map(user => (
-						<div key={user.id}>
-							{user.login}
-							<img src={user.avatar_url} alt={user.login} />
-						</div>
-					))}
+					<div className="user-list">
+						{data.map(user => (
+							<div key={user.id} className="user-item">
+								{user.login}
+								<img
+									src={user.avatar_url}
+									alt={user.login}
+									className="user-avatar"
+								/>
+							</div>
+						))}
+					</div>
 				</div>
 			)}
 		</div>

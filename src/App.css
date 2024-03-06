@@ -1,0 +1,14 @@
+.user-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.user-item {
+	margin: 10px;
+	text-align: center;
+}
+
+.user-avatar {
+	max-width: 100px;
+	border-radius: 50%;
+}
