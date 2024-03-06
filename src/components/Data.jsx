@@ -4,7 +4,6 @@ import { Loading } from "./Users"
 const Data = () => {
 	const [data, setData] = useState([])
 	const [loading, setLoading] = useState(true)
-	const [error, setError] = useState("Error")
 
 	const URL = "https://api.github.com/users"
 
@@ -34,13 +33,11 @@ const Data = () => {
 					{data.map(user => (
 						<div key={user.id}>
 							{user.login}
-							<img src={user.url} alt={user.login} />{" "}
+							<img src={user.avatar_url} alt={user.login} />
 						</div>
 					))}
 				</div>
 			)}
-
-			{error && <p>Error fetching data</p>}
 		</div>
 	)
 }
