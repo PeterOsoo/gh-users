@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Loading } from "./Users"
+import UserData from "./UserData"
 
 const Data = () => {
 	const [data, setData] = useState([])
@@ -23,29 +24,7 @@ const Data = () => {
 		fetchData()
 	}, [])
 
-	return (
-		<div>
-			{loading ? (
-				<Loading />
-			) : (
-				<div>
-					<h3>Users Generated from API endpoint</h3>
-					<div className="user-list">
-						{data.map(user => (
-							<div key={user.id} className="user-item">
-								{user.id}. {user.login}
-								<img
-									src={user.avatar_url}
-									alt={user.login}
-									className="user-avatar"
-								/>
-							</div>
-						))}
-					</div>
-				</div>
-			)}
-		</div>
-	)
+	return <div>{loading ? <Loading /> : <UserData data={data} />}</div>
 }
 
 export default Data
