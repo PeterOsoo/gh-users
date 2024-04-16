@@ -33,7 +33,7 @@ const Data = () => {
 					<div className="user-list">
 						{data.map(user => (
 							<div key={user.id} className="user-item">
-								{user.login}
+								{user.id}. {user.login}
 								<img
 									src={user.avatar_url}
 									alt={user.login}
