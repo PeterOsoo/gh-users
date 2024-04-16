@@ -1,4 +1,3 @@
-// import Users from "./components/Users"
 import Data from "./components/Data"
 import "./App.css"
 
@@ -7,8 +6,6 @@ const App = () => {
 	return (
 		<div>
 			<h3> Github Users </h3>
-
-			{/* <Users /> */}
 
 			<Data />
 		</div>
