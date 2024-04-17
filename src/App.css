@@ -1,14 +1,19 @@
 .user-list {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
 }
 
 .user-item {
-	margin: 10px;
-	text-align: center;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
 }
 
 .user-avatar {
-	max-width: 100px;
-	border-radius: 50%;
+	width: 100%;
+	height: auto;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 }
